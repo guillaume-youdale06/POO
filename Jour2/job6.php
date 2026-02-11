@@ -44,9 +44,8 @@ class Commande{
 $commande = new Commande(13542, ["Lasagne" => 13.90, "Coca Cola" => 3.40, "Tiramisu" => 5.90]);
 
 $commande->afficherCommande();
+echo "TVA : " . $commande->calculTVA() . "<br>";
 echo "<br>";
-
-echo $commande->calculTVA();
 
 //echo $commande->calculTotal(); #erreur --> appelle méthode privée
 
